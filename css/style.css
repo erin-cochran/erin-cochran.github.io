@@ -23,17 +23,41 @@ a {
 
 body {
   line-height: 1.6;
+  font-family: 1.2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  text-align: center;
-  margin: 1rem auto;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-rendering: optimizeSpeed;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
   align-items: center;
 }
-img.u-photo { border-radius: 50%; max-width: 250px;}
-ul { padding: 0; list-style: none; text-align: left;}
-li::before {
+.intro__photo {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+.intro__text {
+  padding: 2rem;
+  text-align: left;
+}
+.intro__name {
+  font-size: 2.2rem;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+}
+.links {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.links__item::before {
   content: "✿ ";
 }
