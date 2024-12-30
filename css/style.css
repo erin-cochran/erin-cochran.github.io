@@ -1,0 +1,32 @@
+:root {
+  --bg-color: #f6f6f6;
+  --fg-color: #403f53;
+  --hyperlink-color: #288ed7;
+}
+
+
+html {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+a {
+  color: var(--hyperlink-color);
+}
+
+body {
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 1rem auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img.u-photo { border-radius: 50%; max-width: 250px;}
+ul { padding: 0; list-style: none; text-align: left;}
+li::before {
+  content: "✿ ";
+}
