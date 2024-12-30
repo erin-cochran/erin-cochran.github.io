@@ -4,6 +4,13 @@
   --hyperlink-color: #288ed7;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #04000b;
+    --fg-color: #fbfbfb;
+    --hyperlink-color: #5ca7e4;
+  }
+}
 
 html {
   background-color: var(--bg-color);
