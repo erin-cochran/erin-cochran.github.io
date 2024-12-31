@@ -60,7 +60,7 @@ body {
   text-rendering: optimizeLegibility;
   margin-top: 0;
 }
-.links {
+.links__list {
   padding: 0;
   list-style: none;
   text-align: left;
