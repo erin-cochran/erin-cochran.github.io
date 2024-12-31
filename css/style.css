@@ -25,15 +25,23 @@ body {
   line-height: 1.6;
   font-family: 1.2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-rendering: optimizeSpeed;
   max-width: 720px;
   margin: 0 auto;
 }
-
+.nav {text-align: right;}
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  display: inline-block;
+}
 .intro {
   display: flex;
   align-items: center;
@@ -60,4 +68,8 @@ body {
 
 .links__item::before {
   content: "✿ ";
+}
+
+.footer {
+  text-align: center;
 }
