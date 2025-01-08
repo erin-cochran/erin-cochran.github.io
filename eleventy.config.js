@@ -5,9 +5,9 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("favicon.ico");
 	eleventyConfig.addPassthroughCopy("robots.txt");
+	eleventyConfig.addPassthroughCopy("CNAME");
 	eleventyConfig.ignores.add("README.md");
 	eleventyConfig.ignores.add("package.json");
-	eleventyConfig.ignores.add("CNAME");
 
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
