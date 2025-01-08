@@ -6,6 +6,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("favicon.ico");
 	eleventyConfig.addPassthroughCopy("robots.txt");
 	eleventyConfig.addPassthroughCopy("CNAME");
+	eleventyConfig.addPassthroughCopy("fonts");
 	eleventyConfig.ignores.add("README.md");
 	eleventyConfig.ignores.add("package.json");
 
