@@ -10,6 +10,13 @@
     <meta name="generator" content="Eleventy v3.0.0">
     <meta name="fediverse:creator" content="@erincochran@hachyderm.io">
     <title>erin cochran ✿ front-end developer in Portland, OR</title>
+
+    <meta property="og:url" content="https://cochran.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Erin Eochran" />
+    <meta property="og:description" content="Front-end developer in Portland, OR" />
+    <meta property="og:image" content="https://cochran.dev/img/card.png" />
+
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
     <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
     <link rel="me" href="mailto:erin@cochran.dev" />
@@ -35,11 +42,11 @@
       </nav>
     </header>
     <main id="#skip" class="primary-content">
-      <article class="h-card" rel="author">
+      <article class="h-card" rel="author" itemscope itemtype="https://schema.org/Person">
   <section class="intro">
     <img class="intro__photo u-photo" height="200" width="200" alt="Photo of erin cochran" src="./img/erin.png" />
     <div class="intro__text">
-      <h1 class="intro__name p-name">erin cochran</h1>
+      <h1 class="intro__name p-name" itemprop="name">erin cochran</h1>
 
       <p class="p-note">Hi, I'm Erin. I'm a front-end engineer based out of <em><span class="p-locality">Portland</span>, <span class="p-region">Oregon</span></em>. My pronouns are <em class="u-pronoun">she</em> and <em class="u-pronoun">her</em>.</p>
       <p>I'm passionate about accessibility, performance, and web standards. I like to build well tested applications that work for as many users as possible, whether that be with a frontend framework like React or Vue, or with only the core technologies of the web. I've been making websites for fun since 1997, and professionally since 2011.</p>
@@ -49,7 +56,7 @@
   <section class="links">
     <h2 class="links__title">around the web</h2>
     <ul class="links__list">
-      <li class="links__item"><a class="u-uid u-url" href="https://cochran.dev">Homepage</a></li>
+      <li class="links__item">Homepage: <a class="u-uid u-url" href="https://cochran.dev" itemprop="url">cochran.dev</a></li>
       <li class="links__item">Codepen: <a class="u-url" href="https://codepen.io/erincochran" rel="me">@erincochran</a></li>
       <li class="links__item">DEV: <a class="u-url" href="https://dev.to/erincochran" rel="me">@erincochran</a></li>
       <li class="links__item">Github: <a class="u-url" href="https://github.com/erin-cochran" rel="me">@erin-cochran</a></li>
