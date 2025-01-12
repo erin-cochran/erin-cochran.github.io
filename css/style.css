@@ -62,7 +62,6 @@ html {
 
 a {
   color: var(--hyperlink-color);
-  transition: color 300ms ease;
   &:visited {
     color: var(--hyperlink-visited);
   }
@@ -73,7 +72,7 @@ a {
 
 body {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "iA Writer Quattro";
   min-height: 100vh;
   display: flex;
@@ -86,12 +85,22 @@ body {
 }
 h1, h2, h3, h4 {
   font-family: "iA Writer Mono", serif;
+  text-rendering: optimizeLegibility;
   font-weight: bold;
 }
 .site-header {
   padding: .75rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  font-weight: bold;
+  font-family: "iA Writer Mono";
 }
 .nav {text-align: right; flex-shrink: 0;}
+.nav:only-child {
+  margin-left: auto;
+}
 .nav__list {
   list-style: none;
   margin: 0;
@@ -172,4 +181,7 @@ h1, h2, h3, h4 {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+.primary-content {
+  flex-grow: 1;
 }
